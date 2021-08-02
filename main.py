@@ -28,7 +28,7 @@ class NumericFormatter:
         try:
             integer = int(string)
             if len(string) not in range(2, (2**32-1)):
-                raise NumericError("String length  out of range")
+                raise NumericError("String length out of range")
         except ValueError:
             raise NumericError("Invalid input") from None
         return integer
